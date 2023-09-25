@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #090909;
+    align-items: center;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Dela Gothic One', sans-serif;
+    color: rgb(0, 255, 123);
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Dela Gothic One', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex; /* Use flexbox to create two columns */
+    justify-content: space-around; /* Space evenly between the columns */
+    align-items: flex-start; /* Align items at the top of each column */
+    margin-top: 20px;
+}
+
+.stopwatch {
+    width: 700px;
+    display: inline-block;
+    margin: 20px ;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center; 
+}
+
+.time {
+    width: 300px; /* Fixed width for time text container */
+    font-size: 180px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    position: relative; 
+    margin-left: 30px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 25px;
+    margin: 10px;
+    border: none; /* Remove the border */
+    border-radius: 10px;
+    background-color: rgb(0, 255, 123);
+}
+
+.lapsecmain{
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    margin: 10px ;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.lapsec{
+    width: 390px;
+    height: 220px;
+    display: inline-block;
+    text-align: center;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.laps {
+    margin: 20px 20px;
+    max-width: 300px;
+    text-align: left;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+/* Hide the default scrollbar */
+.lapsec::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+    background-color: #3b3b3b;
+    margin-right: 10px; /* Background color of the scrollbar track */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+.lapsec::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 255, 123); /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+/* On hover, make the scrollbar thumb slightly darker */
+.lapsec::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 200, 100);
+}
+
+/* Customize the scrollbar track when it's not actively being scrolled */
+.lapsec::-webkit-scrollbar-track {
+    background-color: #3b3b3b; /* Background color of the scrollbar track */
+}
